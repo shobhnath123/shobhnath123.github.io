@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Test - Shobhnath Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .screen-size {
+            background: #2563eb;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .test-item {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-item h3 {
+            margin-top: 0;
+            color: #2563eb;
+        }
+        .responsive-breakpoints {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .breakpoint {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2563eb;
+        }
+        .breakpoint h4 {
+            margin-top: 0;
+            color: #1f2937;
+        }
+        .breakpoint code {
+            background: #e5e7eb;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .instructions {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #92400e;
+        }
+        .instructions ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Responsive Design Test</h1>
+        <p>This page helps you test the responsive design of your portfolio website.</p>
+        
+        <div class="screen-size" id="screenSize">
+            Current Screen Size: <span id="dimensions"></span>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to Test Responsive Design:</h3>
+            <ol>
+                <li><strong>Desktop Testing:</strong> Open your portfolio in a browser and resize the window</li>
+                <li><strong>Mobile Testing:</strong> Use browser DevTools (F12) → Toggle Device Toolbar</li>
+                <li><strong>Real Device Testing:</strong> Test on actual phones and tablets</li>
+                <li><strong>Orientation Testing:</strong> Rotate devices to test landscape/portrait modes</li>
+            </ol>
+        </div>
+        
+        <div class="test-item">
+            <h3>Responsive Breakpoints</h3>
+            <p>Your portfolio uses these breakpoints for optimal display:</p>
+            <div class="responsive-breakpoints">
+                <div class="breakpoint">
+                    <h4>Large Tablets</h4>
+                    <p><code>max-width: 1024px</code></p>
+                    <p>Optimized for tablets and small laptops</p>
+                </div>
+                <div class="breakpoint">
+                    <h4>Tablets</h4>
+                    <p><code>max-width: 768px</code></p>
+                    <p>Mobile navigation, stacked layouts</p>
+                </div>
+                <div class="breakpoint">
+                    <h4>Large Mobile</h4>
+                    <p><code>max-width: 600px</code></p>
+                    <p>Optimized spacing and sizing</p>
+                </div>
+                <div class="breakpoint">
+                    <h4>Small Mobile</h4>
+                    <p><code>max-width: 480px</code></p>
+                    <p>Compact layouts, touch-friendly</p>
+                </div>
+                <div class="breakpoint">
+                    <h4>Extra Small</h4>
+                    <p><code>max-width: 360px</code></p>
+                    <p>Minimal spacing, essential content</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-item">
+            <h3>Key Responsive Features</h3>
+            <ul>
+                <li><strong>Mobile Navigation:</strong> Hamburger menu with smooth animations</li>
+                <li><strong>Flexible Grids:</strong> Auto-adjusting layouts for all screen sizes</li>
+                <li><strong>Touch-Friendly:</strong> 44px minimum touch targets</li>
+                <li><strong>Optimized Typography:</strong> Readable text at all sizes</li>
+                <li><strong>Responsive Images:</strong> Properly scaled avatars and icons</li>
+                <li><strong>Form Optimization:</strong> Mobile-friendly input fields</li>
+                <li><strong>Performance:</strong> Reduced animations on mobile</li>
+            </ul>
+        </div>
+        
+        <div class="test-item">
+            <h3>Testing Checklist</h3>
+            <ul>
+                <li>✅ Navigation menu collapses on mobile</li>
+                <li>✅ All sections stack properly on small screens</li>
+                <li>✅ Text remains readable at all sizes</li>
+                <li>✅ Buttons and links are touch-friendly</li>
+                <li>✅ Forms work well on mobile devices</li>
+                <li>✅ Images scale appropriately</li>
+                <li>✅ No horizontal scrolling on mobile</li>
+                <li>✅ Smooth transitions and animations</li>
+            </ul>
+        </div>
+        
+        <div class="test-item">
+            <h3>Browser DevTools Testing</h3>
+            <p>Use these device presets in Chrome DevTools:</p>
+            <ul>
+                <li><strong>iPhone SE:</strong> 375x667 (small mobile)</li>
+                <li><strong>iPhone 12 Pro:</strong> 390x844 (medium mobile)</li>
+                <li><strong>iPad:</strong> 768x1024 (tablet portrait)</li>
+                <li><strong>iPad Pro:</strong> 1024x1366 (large tablet)</li>
+                <li><strong>Custom:</strong> Test your own dimensions</li>
+            </ul>
+        </div>
+        
+        <div class="test-item">
+            <h3>Next Steps</h3>
+            <ol>
+                <li>Test your portfolio at each breakpoint</li>
+                <li>Check mobile navigation functionality</li>
+                <li>Verify form usability on mobile</li>
+                <li>Test touch interactions and gestures</li>
+                <li>Ensure fast loading on mobile networks</li>
+                <li>Validate accessibility features</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // Update screen size display
+        function updateScreenSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const dimensions = document.getElementById('dimensions');
+            dimensions.textContent = `${width} × ${height}`;
+            
+            // Update color based on breakpoint
+            const screenSize = document.getElementById('screenSize');
+            if (width <= 360) {
+                screenSize.style.background = '#dc2626'; // Red for extra small
+            } else if (width <= 480) {
+                screenSize.style.background = '#ea580c'; // Orange for small mobile
+            } else if (width <= 600) {
+                screenSize.style.background = '#ca8a04'; // Yellow for large mobile
+            } else if (width <= 768) {
+                screenSize.style.background = '#16a34a'; // Green for tablet
+            } else if (width <= 1024) {
+                screenSize.style.background = '#0891b2'; // Cyan for large tablet
+            } else {
+                screenSize.style.background = '#2563eb'; // Blue for desktop
+            }
+        }
+        
+        // Update on load and resize
+        window.addEventListener('load', updateScreenSize);
+        window.addEventListener('resize', updateScreenSize);
+        
+        // Update every second for mobile testing
+        setInterval(updateScreenSize, 1000);
+    </script>
+</body>
+</html>
