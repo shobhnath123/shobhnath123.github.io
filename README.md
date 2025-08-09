@@ -195,7 +195,7 @@ To add a new section, follow this structure:
 2. Point domain to hosting
 3. Your portfolio is live!
 
-## 📝 Browser Support
+## 📝 Browser Support  
 
 - Chrome (latest)
 - Firefox (latest)
@@ -218,7 +218,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - Modern CSS Grid and Flexbox for layout
 - Intersection Observer API for animations
 
-## 📞 Support
+## 📞 Support +91 9918990731
 
 If you need help customizing your portfolio or have questions, feel free to reach out!
 
